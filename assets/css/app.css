@@ -72,7 +72,8 @@ header,
 #features,
 #launcher,
 #servers-list,
-footer {
+#footer,
+#footer-bottom {
   box-sizing:border-box;
   width:100%;
   padding-left:calc(50% - var(--container-width)/ 2);
@@ -353,16 +354,13 @@ nav {
 .server > img:hover {
  /* filter: blur(0); */
  cursor: pointer;
- transform: scale(1.1);
+ transform: scale(1.04);
 }
 #curret {
   margin-top: 10px;
   height: 43px;
   width: 100%;
   
-}
-.circle {
-  border-radius: 50%;
 }
 #servers-info {
   margin-top: 13px;
@@ -390,4 +388,66 @@ nav {
   font-size: 25px;
   margin-top: 38px;
   font-weight: 300;
+}
+
+/* END SERVERS LIST */
+
+
+/* FOOTER */
+#footer {
+  
+  margin-top: 150px;
+  position: relative;
+}
+#footer-top {
+  background-color: #242231;
+  height: 82px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+#footer-arrow {
+  background-color: #4D9ED8;
+  height: 82px;
+  width: 82px;
+  position: absolute;
+  right: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#arrow-top {
+  height: 20px;
+  width: 38px;
+}
+
+#footer-bottom {
+  background-color: #4D9ED8;
+  height: 335px;
+  width: 100%;
+  font-family: sans-serif;
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 82px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-links {
+  margin-top: 38px;
+}
+.footer-links > ul {
+  margin-top: 26px;
+}
+.footer-links > ul > li {
+  list-style-type: none;
+
+}
+.footer-title {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.footer-link {
+  font-size: 16px;
 }
