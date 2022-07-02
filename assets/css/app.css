@@ -356,9 +356,13 @@ nav {
  transform: scale(1.1);
 }
 #curret {
-  margin-left: 50%;
+  margin-top: 10px;
   height: 43px;
-  width: 37px;
+  width: 100%;
+  
+}
+.circle {
+  border-radius: 50%;
 }
 #servers-info {
   margin-top: 13px;
