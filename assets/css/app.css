@@ -348,7 +348,7 @@ nav {
 }
 .server > img {
   transition: 0.6s;
-  filter: blur(210px);
+  filter: blur(2px);
 }
 .server > img:hover {
  filter: blur(0);
