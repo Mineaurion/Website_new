@@ -435,7 +435,7 @@ nav {
 }
 
 .footer-links {
-  margin-top: 38px;
+  margin-top: 10vh;
 }
 .footer-links > ul {
   margin-top: 26px;
@@ -447,7 +447,16 @@ nav {
 .footer-title {
   font-size: 25px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 .footer-link {
   font-size: 16px;
+  color: #242231;
+  text-transform: uppercase;
+  line-height: 23px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+
 }
