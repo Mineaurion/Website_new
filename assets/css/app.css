@@ -348,11 +348,12 @@ nav {
 }
 .server > img {
   transition: 0.6s;
-  filter: blur(2px);
+  /* filter: blur(2px); */
 }
 .server > img:hover {
- filter: blur(0);
+ /* filter: blur(0); */
  cursor: pointer;
+ transform: scale(1.1);
 }
 #curret {
   margin-left: 50%;
