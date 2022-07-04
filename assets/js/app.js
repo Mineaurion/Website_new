@@ -9,17 +9,6 @@ httpRequest.onreadystatechange = function() {
 httpRequest.open('GET', "https://api.mineaurion.com/query/online-players", true);
 httpRequest.send();
 
-let httpRequest = new XMLHttpRequest();
-httpRequest.onreadystatechange = function() {
-    if(httpRequest.readyState === 4) {
-        var results = JSON.parse(httpRequest.responseText);
-        document.getElementById('nbPlayers').innerHTML = results["onlinePlayers"];
-    };
-
-};
-httpRequest.open('GET', "https://api.mineaurion.com/query/online-players", true);
-httpRequest.send();
-
 
 
 
