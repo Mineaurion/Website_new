@@ -3,7 +3,7 @@
 let httpRequest = new XMLHttpRequest();
 let nbPlayers = document.getElementById('nbPlayers')
 let refresh = setInterval(onlinePlayers, 7000);
-nbPlayers.innerHTML = "<img id='loading' src='assets/img/select.svg' ";
+nbPlayers.innerHTML = 'chargement...';
 function onlinePlayers(){
     httpRequest.onreadystatechange = function() {
         if(httpRequest.readyState === 4) {
