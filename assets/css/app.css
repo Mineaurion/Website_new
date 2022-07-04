@@ -415,6 +415,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  filter: brightness(0.8);
+  transition: .5s;
+}
+#footer-arrow:hover {
+  filter: brightness(1);
+  cursor: pointer;
 }
 #arrow-top {
   height: 20px;
