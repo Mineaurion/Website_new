@@ -133,7 +133,7 @@ transition: 0.5s;
 /* NAVBAR */
 
 header {
-  height: 183px;
+  height: auto;
   background-color: #4F476D;
 }
 nav {
@@ -354,7 +354,7 @@ nav {
 .server > img:hover {
  /* filter: blur(0); */
  cursor: pointer;
- transform: scale(1.04);
+ transform: scale(1.07);
 }
 #curret {
   margin-top: 10px;
@@ -368,6 +368,7 @@ nav {
   height: 370px;
   background-color: #4F476D;
   font-family: "Roboto", sans-serif;
+  display: none;
 }
 
 #server-text {

@@ -1,18 +1,21 @@
+// @ts-nocheck
+// GET ONLINE PLAYERS
 let httpRequest = new XMLHttpRequest();
-httpRequest.onreadystatechange = function() {
-    if(httpRequest.readyState === 4) {
-        var results = JSON.parse(httpRequest.responseText);
-        document.getElementById('nbPlayers').innerHTML = results["onlinePlayers"];
+let nbPlayers = document.getElementById('nbPlayers')
+let refresh = setInterval(onlinePlayers, 7000);
+nbPlayers.innerHTML = "<img id='loading' src='assets/img/select.svg' ";
+function onlinePlayers(){
+    httpRequest.onreadystatechange = function() {
+        if(httpRequest.readyState === 4) {
+            var results = JSON.parse(httpRequest.responseText);
+            nbPlayers.innerHTML = results["onlinePlayers"];
+        };
     };
-
+    httpRequest.open('GET', "https://api.mineaurion.com/query/online-players", true);
+    httpRequest.send();
 };
-httpRequest.open('GET', "https://api.mineaurion.com/query/online-players", true);
-httpRequest.send();
 
-
-
-
-
+// END GET ONLINE PLAYERS 
 
 // GO TO LAUNCHER LINKS
 let btn = document.getElementById("hero-btn");
@@ -26,11 +29,6 @@ btn.addEventListener('click', function(){
 });
 // END GO TO LAUNCHER LINKS
 
-
-
-
-
-
 // GO TO THE TOP
 document.querySelector("#footer-arrow").addEventListener('click', function(){
     window.scroll({
@@ -39,3 +37,6 @@ document.querySelector("#footer-arrow").addEventListener('click', function(){
     });
 });
 // END GO TO THE TOP 
+
+// LIST SERVERS
+
