@@ -2,7 +2,7 @@
 // GET ONLINE PLAYERS
 let httpRequest = new XMLHttpRequest();
 let nbPlayers = document.getElementById('nbPlayers')
-let refresh = setInterval(onlinePlayers, 7000);
+let refresh = setInterval(onlinePlayers, 3000);
 nbPlayers.innerHTML = 'chargement...';
 function onlinePlayers(){
     httpRequest.onreadystatechange = function() {
@@ -19,7 +19,7 @@ function onlinePlayers(){
 
 // GO TO LAUNCHER LINKS
 let btn = document.getElementById("hero-btn");
-let target = document.getElementById("launcher");
+let target = document.getElementsByClassName("launcher")[0];
 
 btn.addEventListener('click', function(){
     target.scrollIntoView({
