@@ -92,24 +92,24 @@ header,
   align-content: center;
   color: white;
 }
-#infos {
+.infos {
   display: flex;
   align-items: center;
   margin-right: auto;
 }
 
-#uniquePlayer {
+.uniquePlayer {
   margin-left: 23px;
 }
 
-#social {
+.social {
   display: flex;
   align-items: center;
 }
-#social-title {
+.social-title {
   margin-right: 1rem;
 }
-#social-links {
+.social-links {
   list-style-type: none;
   display: flex;
 }
@@ -141,12 +141,12 @@ nav {
   justify-content: center;
   align-items: center;
 }
-#navbarleft {
+.navbarleft {
   display: flex;
   justify-content: space-around;
   flex-grow: 1;
 }
-#navbarright {
+.navbarright {
   display: flex;
   flex-grow: 1;
   justify-content: space-around;
@@ -164,8 +164,10 @@ nav {
   filter: brightness(1);
   cursor: pointer;
 }
-
-#logo {
+.responsive {
+  display: none;
+}
+.logo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -174,7 +176,7 @@ nav {
   transition: .5s;
   transition-property: filter;
 }
-#logo:hover {
+.logo:hover {
   filter: brightness(1);
   cursor: pointer;
 }
@@ -192,25 +194,26 @@ nav {
   height: 649px;
   background: url("../img/background.svg") no-repeat center;
 }
-#hero-left {
+.hero-left {
   margin-top: 120px;
 }
-#hero-right {
-  margin-top: 62px;
+.hero-right {
+  display: flex;
+  margin-top: 60px;
 }
-#hero-text > h1 {
+.hero-text > h1 {
   text-transform: uppercase;
   color: white;
   font-family: sans-serif;
   font-size: 80px;
 }
-#hero-text > p {
+.hero-text > p {
   color: white;
   font-family: sans-serif;
   font-size: 35px;
   width: 465px;
 }
-#hero-btn {
+.hero-btn {
   margin-top: 47px;
   height: 91px;
   width: 60%;
@@ -224,7 +227,7 @@ nav {
   transition: .5s;
   transition-property: filter;
 }
-#hero-btn:hover {
+.hero-btn:hover {
   filter: brightness(1);
   cursor: pointer;
 }
@@ -235,8 +238,9 @@ nav {
 .features {
   display: grid;
   margin-top: 60px;
-  grid-template-columns: 40vh 40vh 40vh;
-  grid-gap: 8vh;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
   color: #4F476D;
   font-weight: 300;
@@ -261,7 +265,7 @@ nav {
 .feature-text > p {
   margin-top: 7px;
   margin-left: 70px;
-  width: 100%;
+  width: auto;
 }
 /* END FEATURES */
 
@@ -493,14 +497,77 @@ position: absolute;
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1335px) {
+  .infos {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .social {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .social-title {
+    display: none;
+  }
+  .onlinePlayers {
+    margin-left: -5px;
+  }
+  .social-links {
+    margin-right: 20px;
+  }
+  .navbarleft {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .navlink {
+    line-height: 30px;
+  }
+  .navbarright {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  .responsive {
+    display: block;
+  }
+  .hero-left {
+    margin-left: 40px;
+  }
+  .lama {
+    width: 300px;
+  }
+  .hero {
+    justify-content: center;
+    grid-template-columns: 2fr 1fr;
+  }
+  .hero-text > h1 {
+    font-size: 60px;
+  }
+  .hero-text > p {
+    font-size: 25px;
+  }
+  .hero-btn {
+    width: auto;
+  }
   .features {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     justify-content: space-around;
   }
-  
+  .feature:nth-child(3) {
+    margin-top: 30px;
+  }
+  .logo {
+    display: none;
+  }
   .feature-text > p {
     width: auto;
+  }
+  .launcher > p {
+    width: 80%;
+    margin-left: 0;
   }
   .servers {
     grid-template-columns: repeat(3, 1fr);

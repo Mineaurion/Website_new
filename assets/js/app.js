@@ -18,7 +18,7 @@ function onlinePlayers(){
 // END GET ONLINE PLAYERS 
 
 // GO TO LAUNCHER LINKS
-let btn = document.getElementById("hero-btn");
+let btn = document.getElementsByClassName("hero-btn")[0];
 let target = document.getElementsByClassName("launcher")[0];
 
 btn.addEventListener('click', function(){
