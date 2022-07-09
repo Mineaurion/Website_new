@@ -531,6 +531,7 @@ position: absolute;
   nav {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .responsive {
     display: block;
@@ -622,4 +623,22 @@ position: absolute;
   .servers {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+@media screen and (max-width: 480px) {
+  .hero-text > h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .hero-btn {
+    height: 40px;
+    width: 50%;
+    font-size: 15px;      
+  }
+  .hero-text > p {
+    font-size: 14px;
+    text-align: center;  
+  }
+  /* .hero-btn {
+    width: 50%;
+  } */
 }
