@@ -745,3 +745,11 @@ position: absolute;
     right: 0px;
   }
 }
+@media screen and (max-width: 442px) {
+  .hero-left {
+    margin-left: 60px;
+  }
+  .launcher {
+    height: 660px;
+  }
+}
