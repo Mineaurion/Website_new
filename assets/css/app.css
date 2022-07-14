@@ -752,4 +752,13 @@ position: absolute;
   .launcher {
     height: 660px;
   }
+  .btn-launcher {
+    width: 350px;
+  }
+  .btn-launcher > img {
+    position: absolute;
+    left: 32px;
+    top: 29%;
+    width: 30px;
+  }
 }
