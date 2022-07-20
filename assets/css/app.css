@@ -298,11 +298,14 @@ nav {
   font-weight: 300;
 }
 .launcher > p {
-  margin-left: 210px;
   margin-top: 44px;
   font-size: 24px;
   font-weight: 200;
-  line-height: 29px;
+  line-height: 30px;
+  width: 60%;
+}
+.launcher > p:last-child {
+  margin-top: 0;
 }
 .btns {
   display: flex;
@@ -749,11 +752,21 @@ position: absolute;
   .hero-left {
     margin-left: 60px;
   }
+  .hero-btn {
+    width: 80%;
+    font-size: 16px;
+  }
   .launcher {
-    height: 660px;
+    height: 700px;
+  }
+  .launcher > p {
+    width: 80%;
+  }
+  .launcher > p:last-child {
+    width: 100%;
   }
   .btn-launcher {
-    width: 350px;
+    width: 320px;
   }
   .btn-launcher > img {
     position: absolute;
@@ -761,4 +774,5 @@ position: absolute;
     top: 29%;
     width: 30px;
   }
+
 }
