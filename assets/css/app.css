@@ -73,7 +73,8 @@ header,
 .launcher,
 .servers-list,
 .footer,
-.footer-bottom {
+.footer-bottom,
+#statut-servers-list {
   box-sizing: border-box;
   width: 100%;
   padding-left: calc(50% - var(--container-width)/ 2);
@@ -165,13 +166,26 @@ nav {
 .navlink {
   color: white;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   text-decoration: none;
   filter: brightness(0.8);
   transition: .5s;
   transition-property: filter;
 }
 .navlink:hover {
+  filter: brightness(1);
+  cursor: pointer;
+}
+.navlink-active {
+  color: var(--main-color);
+  font-family: sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  filter: brightness(0.90);
+  transition: .5s;
+  transition-property: filter;
+}
+.navlink-active:hover {
   filter: brightness(1);
   cursor: pointer;
 }
@@ -511,7 +525,7 @@ position: absolute;
 
 @media screen and (max-width: 1440px) {
   .container {
-    --container-width: 1220px;
+    --container-width: 1121px;
   }
   .social-links {
     margin-right: 20px;
@@ -573,7 +587,7 @@ position: absolute;
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
   .container {
     --container-width: 1000px;
   }
@@ -646,7 +660,7 @@ position: absolute;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   } 
-}
+} */
 @media screen and (max-width: 768px) {
   .hero-left {
     margin-left: 30px;
@@ -776,3 +790,68 @@ position: absolute;
   }
 
 }
+
+
+
+
+
+
+/* STATUT PAGE */
+.statut-body {
+  background: url("https://mineaurion.com/img/serveurs.jpg") center no-repeat;
+  background-size: 100% 100%;
+}
+.statuts-title {
+  margin-top: 60px;
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+#statut-servers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  margin-top: 60px;
+}
+.statut-server {
+  border: solid 6px var(--main-color);
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.statut-server-title {
+  background-color: #242231;
+  height: 60px;
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.statut-server-infos {
+  margin-top: 16px;
+  margin-left: 14px;
+  line-height: 30px;
+  color: white;
+}
+.badge {
+  margin-left: 10px;
+  font-size: 12px;
+  color:white;
+  background-color: var(--main-color);
+  padding: 3px 7px;
+  border-radius: 20px;
+}
+.playerhead {
+  margin-left: 10px;
+}
+/* END STATUT PAGE */

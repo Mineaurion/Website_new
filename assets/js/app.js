@@ -1,4 +1,3 @@
-// @ts-nocheck
 // GET ONLINE PLAYERS
 let httpRequest = new XMLHttpRequest();
 let nbPlayers = document.getElementById('nbPlayers')
@@ -49,5 +48,3 @@ document.querySelector(".footer-arrow").addEventListener('click', function(){
     });
 });
 // END GO TO THE TOP 
- 
-
