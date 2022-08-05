@@ -105,9 +105,10 @@ const serveursFetch = () => {
   
   document.addEventListener('DOMContentLoaded', (event) => {
     serveursFetch();
-    const refreshStatus = setInterval(serveursFetch(), 800, 'playersList', '' );
+    setInterval(function () {
+      serveursFetch();
+    }, 30000);
   })
-
 //END STATUT PLAYERS LIST
 
 
