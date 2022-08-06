@@ -75,7 +75,8 @@ header,
 .servers-list,
 .footer,
 .footer-bottom,
-#statut-servers-list {
+#statut-servers-list,
+.awards {
   box-sizing: border-box;
   width: 100%;
   padding-left: calc(50% - var(--container-width)/ 2);
@@ -861,3 +862,110 @@ position: absolute;
   color: rgb(255, 28, 28);
 }
 /* END STATUT PAGE */
+
+
+/* AWARDS PAGE */
+.awards-rank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 150px;
+}
+.awards-title {
+  text-align: center;
+  font-size: 70px;
+  font-family: "Roboto";
+  font-weight: bold;
+  margin-top: 70px;
+}
+.awards-text {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex-direction: column;
+  margin-top: 121px;
+  
+}
+.awards-text > p {
+  text-align: justify;
+  line-height: 60px;
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+.awards-subtitle {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 141px;
+}
+.third-rank {
+  position: relative;
+}
+.second-rank {
+  position: relative;
+  height: 69vh;
+}
+.first-rank {
+  position: relative;
+}
+.award-podium-first-rank {
+  height: 268px;
+  width: 440px;
+  background-color: #242231;
+  position: absolute;
+  bottom: 0;
+}
+.award-podium-second-rank {
+  height: 168PX;
+  width: 440px;
+  background-color: #242231;
+  position: absolute;
+  bottom: 0;
+}
+.award-podium-third-rank {
+  height: 84px;
+  width: 440px;
+  background-color: #242231;
+  position: absolute;
+  bottom: 0;
+}
+.award-second-rank {
+  display: flex;
+  justify-content: center;
+}
+.award-first-rank {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+.award-third-rank {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+.award-third-skin {
+  margin-top: 147px;
+}
+.award-first-skin {
+  margin-top: 3px;
+}
+.award-second-skin {
+  margin-top: 103px;
+}
+.nbrs-votes {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid red 3px;
+  margin-bottom: ;
+}
+.nbrs-votes > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+/* AWARDS END PAGE
