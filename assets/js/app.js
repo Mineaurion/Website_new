@@ -81,10 +81,10 @@ const serveursFetch = () => {
                 badge += '<span class="badge">Beta</span>'
               }
               if(server.access.paying){
-                badge += '<span class="badge">Payant</span>'
+                badge += '<a href="http://shop.mineaurion.com/category/acces-aux-serveurs" title="Accéder à la boutique" target="_blank" class="badge">Payant</a>'
               }
               if(server.access.donator){
-                badge += '<span class="badge">Donateur</span>'
+                badge += '<a href="http://shop.mineaurion.com/category/726483" title="Accéder à la boutique" target="_blank" class="badge">Donateur</a>'
               }
               html =  '<div class="statut-server-title">'+ server.name + badge + '</div>' +
                         '<div class="statut-server-infos">'+
@@ -110,6 +110,3 @@ const serveursFetch = () => {
     }, 30000);
   })
 //END STATUT PLAYERS LIST
-
-
-
