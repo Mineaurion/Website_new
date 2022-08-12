@@ -431,7 +431,6 @@ nav {
 
 /* FOOTER */
 .footer {
-  margin-top: 150px;
   position: relative;
 }
 .footer-top {
@@ -512,7 +511,7 @@ nav {
   height: 60px;
 }
 #copyright-text {
-color: wheat;
+color: white;
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -799,11 +798,11 @@ position: absolute;
 
 /* STATUT PAGE */
 .statut-body {
-  background: url("https://mineaurion.com/img/serveurs.jpg") center no-repeat;
+  background: url("https://mineaurion.com/img/serveurs.jpg") no-repeat;
   background-size: 100% 100%;
 }
 .statuts-title {
-  margin-top: 60px;
+  padding-top: 60px;
   font-size: 60px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -815,6 +814,8 @@ position: absolute;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 60px;
   margin-top: 60px;
+  padding-bottom: 150px;
+  height: 100%;
 }
 .statut-server {
   border: solid 6px var(--main-color);

@@ -61,8 +61,7 @@ const serveursFetch = () => {
     const serverContainer = document.getElementById('statut-servers-list');
     serverContainer.innerHTML = "";
     fetch('https://api.mineaurion.com/query')
-      .then( response => {
-        response.json()
+      .then( response => {response.json()
           .then( servers => {
             let index = 0;
             let id = index;
@@ -73,9 +72,7 @@ const serveursFetch = () => {
                 id = index;
                 html = '<div class="statut-server" id="'+ id + '"></div>'
                 serverContainer.innerHTML += html;
-              server.players.forEach( player => {
-                playersList += '<a class="playerhead" title="'+ player +'"><img src="https://cravatar.eu/avatar/'+ player +'/30"/></a>';
-              })
+              server.players.forEach( player => { playersList += '<a class="playerhead" title="'+ player +'"><img src="https://cravatar.eu/avatar/'+ player +'/30"/></a>';})
               let badge = " ";
               if(server.access.beta){
                 badge += '<span class="badge">Beta</span>'
@@ -86,15 +83,15 @@ const serveursFetch = () => {
               if(server.access.donator){
                 badge += '<a href="http://shop.mineaurion.com/category/726483" title="Accéder à la boutique" target="_blank" class="badge">Donateur</a>'
               }
-              html =  '<div class="statut-server-title">'+ server.name + badge + '</div>' +
-                        '<div class="statut-server-infos">'+
-                            '<p>Adresse : '+ server.dns +'</p>' +
-                            '<p>Version : '+ server.version.modpack +'</p>' +
-                            '<p>Joueur(s) : '+ server.onlinePlayers +'/'+ server.maxPlayers +'</p>' +
-                            '<p>Statut : <span class="'+ css +'">'+ stateServer +'</span></p>' +
+              html =  ['<div class="statut-server-title">'+ server.name + badge + '</div>',
+                        '<div class="statut-server-infos">',
+                            '<p>Adresse : '+ server.dns +'</p>',
+                            '<p>Version : '+ server.version.modpack +'</p>',
+                            '<p>Joueur(s) : '+ server.onlinePlayers +'/'+ server.maxPlayers +'</p>',
+                            '<p>Statut : <span class="'+ css +'">'+ stateServer +'</span></p>',
                             '<p>Joueur(s) en ligne : </p>' + playersList +
-                        '</div>';
-              document.getElementById(id).innerHTML += html;
+                        '</div>'];
+              document.getElementById(id).innerHTML += html.join('');
               index++;
             })
           })
