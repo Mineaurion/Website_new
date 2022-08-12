@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/img/site.webmanifest"> -->
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Mineaurion</title>
+</head>
+<body class="container">
+    <div class="top">
+        <div class="infos">
+            <span class="onlinePlayers">Joueurs en ligne : <span id="nbPlayers"></span></span>
+            <span class="uniquePlayer">Joueurs uniques : <span id="uniquePlayercount">47384</span></span>
+        </div>
+        <div class="social">
+            <span class="social-title">Rejoins nous :</span>
+            <ul class="social-links">
+                <li id="social-link-discord">
+                    <a href="#"><img src="assets/img/discord.svg" alt=""></a>
+                </li>
+                <li id="social-link-ytb">
+                    <a href="#"><img src="assets/img/ytb.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <header>
+        <nav>
+            <span class="responsive"><a class="responsive-logo" href="index.html"><img src="assets/img/logo.svg"
+                        alt=""></a></span>
+            <ul class="navbarleft">
+                <li><a class="navlink" target="_blank" href="http://forum.mineaurion.com">FORUM</a></li>
+                <li><a class="navlink" href="">WIKI</a></li>
+                <li><a class="navlink" href="awards.html">RÉCOMPENSES</a></li>
+                <li><a class="navlink" target="_blank" href="http://shop.mineaurion.com">BOUTIQUE</a></li>
+            </ul>
+            <span class="logo">
+                <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+            </span>
+            <ul class="navbarright">
+                <li><a class="navlink servers-link" href="">NOS SERVEURS</a></li>
+                <li><a class="navlink" href="statut.html">STATUTS</a></li>
+                <li><a class="navlink" href="">RÈGLEMENT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-left">
+            <div class="hero-text">
+                <h1>Mineaurion</h1>
+                <p>Une expérience unique, des modpacks, une communauté</p>
+                <p>Rejoins nous !</p>
+            </div>
+            <button class="hero-btn"><a class="play" href=""></a>JOUER GRATUITEMENT</a></button>
+        </div>
+        <div class="hero-right">
+            <img src="assets/img/llama.svg" alt="" class="lama">
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <div class="feature-title">
+                <img class="feature-logo" src="assets/img/support.svg" alt=""></span>
+                <h2>SUPPORT ACTIF</h2>
+            </div>
+            <span class="feature-text">
+                <p>Les membres du staff sont présents pour vous, sur les serveurs, sur le forum mais aussi sur le
+                    discord.</p>
+            </span>
+        </div>
+        <div class="feature">
+            <div class="feature-title">
+                <img class="feature-logo"" src=" assets/img/support.svg" alt=""></span>
+                <h2>SUPPORT ACTIF</h2>
+            </div>
+            <span class="feature-text">
+                <p>Les membres du staff sont présents pour vous, sur les serveurs, sur le forum mais aussi sur le
+                    discord.</p>
+            </span>
+        </div>
+        <div class="feature">
+            <div class="feature-title">
+                <img class="feature-logo"" src=" assets/img/support.svg" alt=""></span>
+                <h2>SUPPORT ACTIF</h2>
+            </div>
+            <span class="feature-text">
+                <p>Les membres du staff sont présents pour vous, sur les serveurs, sur le forum mais aussi sur le
+                    discord.</p>
+            </span>
+        </div>
+    </section>
+    <section class="launcher">
+        <h2>Télécharger notre launcher</h2>
+        <p>Nous avons développé notre launcher pour vous ! Il permet de vous connecter avec plus de facilités, d'avoir
+            accès à certains contenus exclusifs.</p>
+        <p>Alors n'hésitez pas, téléchargez le !</p>
+        <div class="btns">
+            <a href="" id="btn-launcher-windows">
+                <button class="btn-launcher">
+                    <img src="assets/img/Windows.svg" alt="">
+                    <span>Windows</span>
+                </button>
+            </a>
+            <a href="" class="btn-launcher-linux">
+                <button class="btn-launcher">
+                    <img src="assets/img/Linux.svg" alt="">
+                    <span>Linux</span>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="servers-list" id="servers-list">
+        <h2>NOS SERVEURS</h2>
+        <div class="servers">
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+                <!-- <span><img id="curret" src="assets/img/select.svg" alt=""></span> -->
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+            <div class="server">
+                <img src="assets/img/server.jpg" alt="">
+            </div>
+        </div>
+        <div id="servers-info">
+            <div id="server-text">
+                <h3 class="server-name">Infinity</h3>
+                <p class="server-ip">infinity.mineaurion.com</p>
+                <p class="server-description">Vivre une aventure survie avec un modpack qui lui aussi en a pour tous les
+                    goûts ainsi qu’un large éventail de mods présent sur le modpack.</p>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <span class="footer-arrow">
+                <img class="arrow-top" src="assets/img/arrow-top.svg" alt="">
+            </span>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <h4 class="footer-title">Liens utiles</h4>
+                <ul>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Liens utiles</h4>
+                <ul>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Liens utiles</h4>
+                <ul>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-title">Liens utiles</h4>
+                <ul>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                    <li><a class="footer-link" href="">lien</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <span id="copyright-text">© 2022 Mineaurion - Toute reproduction interdite</span>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
