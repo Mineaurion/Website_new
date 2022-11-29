@@ -17,7 +17,7 @@ export default {
   },
   target: 'static',
   router: {
-    base: '/Mineaurion'
+    base: '/Website_new'
   },
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
