@@ -54,9 +54,9 @@ export default {
   },
   async fetch() {
     const servers = await this.serversArray();
-    mode: 'no-cors'
   },
   mounted() {
+    this.serversArray()
     this.intervalData = setTimeout(this.serversArray, 12000)
   },
   destroyed() {
