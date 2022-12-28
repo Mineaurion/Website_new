@@ -1,6 +1,6 @@
 <template>
   <nav class="lg:h-32 bg-marine-blue flex">
-    <div class="container mx-auto flex flex-col lg:flex-row justify-around items-center">
+    <div class="mx-auto flex flex-col lg:flex-row justify-around items-center">
       
       <div class="flex flex-row items-center relative mt-5 lg:mt-0">
         <div class="flex lg:hidden flex-row items-center mx-auto relative justify-center mb-5">
@@ -13,7 +13,7 @@
         </svg>
       </div>
       <!-- Left menu desktop version -->
-      <ul :class="this.showMobileMenu ? 'flex' : 'hidden'" class="lg:gap-10 mt-5 flex-col lg:mt-0 lg:flex lg:flex-row">
+      <ul :class="this.showMobileMenu ? 'flex' : 'hidden'" class="lg:gap-10 mt-5 flex-col mr-2 xl:mr-9 lg:mt-0 lg:flex lg:flex-row">
         <li><a class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300" href="">FORUM</a></li>
         <li><a class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300" href="">WIKI</a></li>
         <li><a class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300" href="">RECOMPENSE</a></li>
@@ -25,7 +25,7 @@
         <a href="/"><img class="h-28 brightness-75 hover:brightness-100 duration-300 flex justify-center" src="~/assets/img/logo.svg" alt="Desktop Logo"></a>
       </div>
       <!-- Right menu desktop version -->
-      <ul :class="this.showMobileMenu ? 'flex' : 'hidden'" class="lg:gap-10 ml-3 flex-col lg:flex lg:flex-row">
+      <ul :class="this.showMobileMenu ? 'flex' : 'hidden'" class="lg:gap-10 xl:ml-9 flex-col lg:flex lg:flex-row">
         <li><a  v-scroll-to="{ el: '#servers', duration: 300 }" @click="$router.push({ name: 'index', hash: '' })" class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300 hover:cursor-pointer">NOS SERVEURS</a></li>
         <li><NuxtLink class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300" to="/servers/">STATUS</NuxtLink></li>
         <li><a class="text-xl text-gray-light brightness-75 hover:brightness-100 duration-300" href="">RECOMPENSES</a></li>
