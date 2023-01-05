@@ -1,7 +1,7 @@
 <template>
   <main>
-    <section class="h-128 bg-hero-pattern flex">
-      <div class="container mx-auto flex flex-row items-center xl:space-x-28 xl:justify-around">
+    <section class="h-128 bg-hero-pattern flex bg-no-repeat bg-cover">
+      <div class="mx-auto flex flex-row items-center xl:space-x-28 xl:justify-around">
         <div class="flex flex-col items-center justify-center">
           <h1 class="text-gray-light text-6xl font-sans font-medium uppercase">Mineaurion</h1>
           <p class="text-gray-light text-2xl text-center xl:w-max">Une expérience unique, des modpacks, une communauté.</p>
@@ -13,7 +13,7 @@
         </div>
       </div>
     </section>
-    <section class="container mx-auto text-marine-blue mt-5">
+    <section class="mx-auto text-marine-blue mt-5">
       <div class="flex flex-col font-sans ml-12 xl:flex-row">
         <div>
           <div class="flex">
@@ -45,7 +45,7 @@
       </div>
     </section>
     <section ref="launcher" class="h-128 bg-gray-dark mt-5 flex flex-col justify-center font-sans items-center">
-      <div class="container mx-auto text-gray-light ">
+      <div class="container mx-auto text-gray-light">
         <div class="flex justify-center items-center flex-col">
           <h2 class="text-2xl text-center lg:text-4xl font-light">Télécharger notre propre launcher</h2>
           <p class="text-xl text-center lg:text-2xl w-full lg:w-3/4 mt-5 font-thin">Nous avons développé notre launcher pour vous !</p>
