@@ -6,7 +6,7 @@
       <div v-for="(server, index) in servers" v-bind:key="index" class="h-auto w-4/5 mb-5  mx-auto lg:mb-0 lg:w-96 border-4 solid border-blue rounded-lg">
         <div class="h-14 flex items-center pl-4 bg-dark-blue w-full">
           <h1 class="font-sans font-semibold text-xl uppercase text-gray-light">{{ server.name }}</h1>
-          <div class="flex pl-4">
+          <div class="flex">
             <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.beta === true" title="Plus d'informations sur notre discord" target="_blank" href="https://mineaurion.com/discord">Beta</a>
             <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.paying === true" target="_blank" title="Obtenir l'accès au serveur" href="http://shop.mineaurion.com/category/acces-aux-serveurs">Payant</a>
             <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.donator === true" title="Obtenez votre grade Donateur afin de rejoindre l'aventure !" target="_blank" href="http://shop.mineaurion.com/category/726483">Donateur</a>
@@ -15,7 +15,7 @@
         <div class="ml-2 mt-2 text-gray-light">Adresse : {{ server.dns }}</div>
         <div class="ml-2 text-gray-light">Version du serveur : {{ server["version"].minecraft }}</div>
         <div class="ml-2 text-gray-light">Version du modpack : {{ server["version"].modpack }}</div>
-        <div class="ml-2 text-gray-light flex flex-row" v-for="(time, index) in server.schedule" v-bind:key="index">
+        <div class="ml-2 text-gray-light flex flex-col xl:flex-row" v-for="(time, index) in server.schedule" v-bind:key="index">
           Reboot :
           <div class="ml-2 text-gray-light" v-for="(schedule, index) in time" :key="index">
             {{ schedule }}
@@ -54,9 +54,9 @@ export default {
   },
   async fetch() {
     const servers = await this.serversArray();
-    mode: 'no-cors'
   },
   mounted() {
+    this.serversArray()
     this.intervalData = setTimeout(this.serversArray, 12000)
   },
   destroyed() {
