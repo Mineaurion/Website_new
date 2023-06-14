@@ -1,0 +1,33 @@
+:root {
+    font-family: 'Open Sans', sans-serif;
+    /* SETTINGS */
+    --container-width: 1300px;
+    --header-nav-gap: 36px;
+
+    /* COLORS */
+    --c-primary: #4D9ED8;
+    --c-secondary: #242231;
+    --c-third: #4F476D;
+
+    /* FONTS COLORS */
+    --fc-primary: #f6efef;
+    --fc-secondary: #4F476D;
+    background-image:  linear-gradient(rgba(77, 77, 77, 0.6), rgba(77, 77, 77, 0.6)), url("~/assets/img/hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+html {
+    height: 100vh;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: calc(50% - var(--container-width) / 2);
+    padding-right: calc(50% - var(--container-width) / 2);
+}

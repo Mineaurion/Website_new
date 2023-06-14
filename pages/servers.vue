@@ -7,17 +7,17 @@
         <div class="h-14 flex items-center pl-4 bg-dark-blue w-full">
           <h1 class="font-sans font-semibold text-xl uppercase text-gray-light">{{ server.name }}</h1>
           <div class="flex">
-            <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.beta === true" title="Plus d'informations sur notre discord" target="_blank" href="https://mineaurion.com/discord">Beta</a>
-            <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.paying === true" target="_blank" title="Obtenir l'accès au serveur" href="http://shop.mineaurion.com/category/acces-aux-serveurs">Payant</a>
-            <a class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" v-if="server.access.donator === true" title="Obtenez votre grade Donateur afin de rejoindre l'aventure !" target="_blank" href="http://shop.mineaurion.com/category/726483">Donateur</a>
+            <a v-if="server.access.beta === true" class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" title="Plus d'informations sur notre discord" target="_blank" href="https://mineaurion.com/discord">Beta</a>
+            <a v-if="server.access.paying === true" class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" target="_blank" title="Obtenir l'accès au serveur" href="http://shop.mineaurion.com/category/acces-aux-serveurs">Payant</a>
+            <a v-if="server.access.donator === true" class="text-gray-light ml-2 h-6 w-full pl-2 pr-2 rounded-lg text-badge bg-marine-blue brightness-75 hover:brightness-100 duration-100" title="Obtenez votre grade Donateur afin de rejoindre l'aventure !" target="_blank" href="http://shop.mineaurion.com/category/726483">Donateur</a>
           </div>
         </div>
         <div class="ml-2 mt-2 text-gray-light">Adresse : {{ server.dns }}</div>
         <div class="ml-2 text-gray-light">Version du serveur : {{ server["version"].minecraft }}</div>
         <div class="ml-2 text-gray-light">Version du modpack : {{ server["version"].modpack }}</div>
-        <div class="ml-2 text-gray-light flex flex-col xl:flex-row" v-for="(time, index) in server.schedule" v-bind:key="index">
+        <div v-for="(time, index) in server.schedule" class="ml-2 text-gray-light flex flex-col xl:flex-row" v-bind:key="index">
           Reboot :
-          <div class="ml-2 text-gray-light" v-for="(schedule, index) in time" :key="index">
+          <div v-for="(schedule, index) in time" class="ml-2 text-gray-light" :key="index">
             {{ schedule }}
           </div>
         </div>
@@ -26,9 +26,9 @@
           <span v-if="server.maxPlayers > 1">{{ server.onlinePlayers }} / {{ server.maxPlayers }}</span>
         </div>
         <div class="ml-2 text-gray-light">Statut :
-          <span class="text-green" v-if="server.status == true">Allumé</span>
-          <span class="text-red" v-else-if="server.status == false">Éteint</span>
-          <span class="text-red" v-else>Aucunes infos</span>
+          <span v-if="server.status == true" class="text-green">Allumé</span>
+          <span v-else-if="server.status == false" class="text-red">Éteint</span>
+          <span v-else class="text-red">Aucunes infos</span>
         </div>
         <div class="ml-2 text-gray-light">Joueur(s) en ligne :</div>
         <div class="flex mt-4">
