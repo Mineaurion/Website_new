@@ -1,8 +1,6 @@
 <template>
-  <div>
-    <Topbar />
-    <Navbar />
-    <Nuxt />
-    <Footer/>
-  </div>
+  <LayoutTopBar />
+  <LayoutHeader />
+  <NuxtPage />
+  <LayoutFooter />
 </template>

@@ -6,7 +6,7 @@
         <div class="flex lg:hidden flex-row items-center mx-auto relative justify-center mb-5">
           <a href="/"><img class="h-24 brightness-75 hover:brightness-100 duration-300 flex justify-center" src="~/assets/img/logo.svg" alt="Responsive Logo"></a>
         </div>
-        <svg @click="showMenu()" class="lg:hidden -right-full absolute cursor-pointer" width="50" height="45" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="lg:hidden -right-full absolute cursor-pointer" width="50" height="45" viewBox="0 0 25 21" fill="none" xmlns="http://www.w3.org/2000/svg" @click="showMenu()">
           <rect width="25" height="3" fill="#D9D9D9"/>
           <rect y="9" width="25" height="3" fill="#D9D9D9"/>
           <rect y="18" width="25" height="3" fill="#D9D9D9"/>
