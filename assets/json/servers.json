@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Infinity Evolved",
+    "ip": "infinity.mineaurion.com",
+    "img": "https://mineaurion.com/img/infinity.png",
+    "description": "Vivre une aventure survie avec un modpack qui lui aussi en a pour tous les goûts ainsi qu’un large éventail de mods présent sur le modpack. Modpack ouvert depuis 7 ans chez nous ! Le doyen de la bande !"
+  },
+  {
+    "name": "Infinity Reloaded",
+    "ip": "inf-reloaded.mineaurion.com",
+    "img": "https://mineaurion.com/img/infinityr.png",
+    "description": "Infinity Evolved Reloaded est un modpack complet créé par l'équipe FTB, Ce modpack contient plus de 180 mods. Il est conçu pour un joueur voulant toutes sortes de mods de styles différents comme de la magie, technologie, agriculture etc."
+  },
+  {
+    "name": "Agrarian 2",
+    "ip": "agrarian.mineaurion.com",
+    "img": "https://mineaurion.com/img/agrarian.png",
+    "description": "Le skyblock par excellence, suivez un livre de quêtes tout le long de votre aventure et construisez votre ile pas à pas."
+  },
+  {
+    "name": "Ragnamod 6",
+    "ip": "ragnamod6.mineaurion.com",
+    "img": "https://pbs.twimg.com/media/E87DRT7XMAMbPrL?format=png&name=small",
+    "description": "La dernière version du célèbre modpack des FTP, en mode Overworld avec plus de 300 mods ! L'un des premiers serveurs Ragnamod 6 public ! Venez jouer sur notre serveur disponible."
+  },
+  {
+    "name": "BlackstoneBlock",
+    "ip": "blackstoneblock.mineaurion.com",
+    "img": "https://media.forgecdn.net/avatars/435/745/637676128618979914.png",
+    "description": "Le nouveau serveur en 1.16.5 crée par Mldeg. C'est un skyblock alternatif, vous êtes enterré sous terre. Vous retrouverez des quêtes qui regroupe des mods industriels comme magiques. Si les quêtes ne vous font pas peur alors rejoignez-nous."
+  },
+  {
+    "name": "AllTheMod7",
+    "ip": "atm7.mineaurion.com",
+    "img": "https://media.forgecdn.net/avatars/391/574/637584581193129752.jpeg",
+    "description": "Premier serveur 1.18.2 moddé FR. Venez découvrir le serveur avec des centaines de quetes !"
+  },
+  {
+    "name": "Modpack donateur - All the fabric 6",
+    "ip": "donateur.mineaurion.com",
+    "img": "https://media.forgecdn.net/avatars/630/292/638029267991555056.png",
+    "description": "Un modpack exclusif pour nos donateurs. Ce mois-ce retrouvez All the fabric 6 en 1.19.2. Venez découvrir !"
+  },
+  {
+    "name": "Project Isothermal Expert",
+    "ip": "pie.mineaurion.com",
+    "img": "https://media.forgecdn.net/avatars/531/428/637853459967044519.jpeg",
+    "description": "Project Isothermal Export est un modpack Minecraft en 1.16.5, le modpack s'articule autour du mod Compact Crafting et Extrem Crafting."
+  }
+]

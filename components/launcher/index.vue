@@ -8,8 +8,9 @@
 </template>
 <style>
 #launcher {
-  height: 400px;
-  background: var(--c-secondary);
+  padding: 50px;
+  background: url("~/assets/img/section_launcher_background.svg");
+  background-size: contain;
   display: flex;
   align-items: center;
 }

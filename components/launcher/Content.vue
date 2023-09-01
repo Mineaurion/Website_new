@@ -18,16 +18,18 @@
   align-items: center;
 }
 .launcher-title {
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 40px;
-  font-weight: lighter;
-  color: var(--fc-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--fc-secondary);
 }
 .launcher-text {
-  color: var(--fc-primary);
-  max-width: 40%;
+  color: var(--fc-secondary);
+  max-width: 70%;
+  text-align: center;
   line-height: 30px;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: lighter;
 }
 </style>

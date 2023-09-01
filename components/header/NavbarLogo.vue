@@ -3,7 +3,7 @@
 </template>
 <style>
 #logo {
-  height: 110px;
+  height: 91px;
   cursor: pointer;
   filter: brightness(0.9);
   transition-duration: 100ms;

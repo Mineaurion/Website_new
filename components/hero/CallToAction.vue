@@ -1,21 +1,18 @@
 <template>
-  <NuxtLink class="" to="#launcher" @click="goToLauncher()">
-    <button class="call_to_action_btn" type="button">
-      <span class="call_to_action_front">jouer gratuitement</span>
+  <div id="call_to_action_component">
+    <button class="call_to_action_btn" type="button" @click="getAddressIp()">
+      <span ref="ip" class="call_to_action_front">PLAY.MINEAURION.COM</span>
     </button>
-  </NuxtLink>
+    <em class="call_to_action_description">Cliquez sur le bouton pour copier l'adresse IP</em>
+  </div>
 </template>
 <script>
 export default {
   methods: {
-    goToLauncher: function () {
-      history.pushState(
-        "",
-        document.title,
-        window.location.pathname + window.location.search
-      );
-    }
-  }
+    getAddressIp: function () {
+      navigator.clipboard.writeText("play.mineaurion.com");
+    },
+  },
 };
 </script>
 <style scoped>
@@ -28,7 +25,6 @@ export default {
   cursor: pointer;
   outline-offset: 4px;
   text-transform: uppercase;
-  border: solid var(--fc-primary) 2px;
   font-weight: bold;
   width: 24em;
 }
@@ -46,5 +42,14 @@ export default {
 }
 .call_to_action_btn:focus {
   outline: none;
+}
+.call_to_action_description {
+  color: white;
+  margin-top: 4px;
+  font-size: 0.6em;
+}
+#call_to_action_component {
+  display: flex;
+  flex-direction: column;
 }
 </style>

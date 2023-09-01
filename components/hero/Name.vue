@@ -1,5 +1,7 @@
 <template>
-  <h1>{{ heroTitle }}</h1>
+  <h1>
+    <img src="~/assets/img/logo_letter.svg" alt="" srcset="">
+  </h1>
 </template>
 
 <script>

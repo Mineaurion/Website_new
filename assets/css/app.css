@@ -6,12 +6,12 @@
 
     /* COLORS */
     --c-primary: #4D9ED8;
-    --c-secondary: #242231;
+    --c-secondary: #18354A;
     --c-third: #4F476D;
 
     /* FONTS COLORS */
     --fc-primary: #f6efef;
-    --fc-secondary: #4F476D;
+    --fc-secondary: #0C1A24;
     background-image:  linear-gradient(rgba(77, 77, 77, 0.6), rgba(77, 77, 77, 0.6)), url("~/assets/img/hero-bg.jpg");
     background-repeat: no-repeat;
     background-position: top;

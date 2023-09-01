@@ -2,7 +2,7 @@
   <section id="hero">
     <div class="filter-bg container hero-content">
       <div class="hero-left">
-        <HeroName hero-title="Mineaurion" />
+        <HeroName/>
         <HeroTagLine />
         <HeroCallToAction />
       </div>

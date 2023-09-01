@@ -1,58 +1,62 @@
 <template>
-  <section id="launcher-buttons">
-    <button class="launcher-button" type="button">
-      <Icon
-        icon="codicon:terminal-linux"
-        color="#242231"
-        width="36"
-        height="36"
-      />
-      Launcher Linux
+  <section id="launcher_buttons">
+    <button class="launcher_button" type="button">
+      <span class="launcher_button_content">
+        <Icon
+          icon="codicon:terminal-linux"
+          color="#242231"
+          width="36"
+          height="36"
+        />
+        Launcher Linux
+      </span>
     </button>
-    <button class="launcher-button" type="button">
-      <Icon
-        icon="bi:windows"
-        color="#242231"
-        width="36"
-        height="36"
-      />
-      Launcher Windows
+    <button class="launcher_button" type="button">
+      <span class="launcher_button_content">
+        <Icon icon="bi:windows" color="#242231" width="36" height="36" />
+        Launcher Windows
+      </span>
     </button>
   </section>
 </template>
 
 <style>
-#launcher-buttons {
+#launcher_buttons {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 32px;
   align-items: center;
-  gap: 10px;
+  gap: 32px;
   border: none;
 }
 
-.launcher-button {
-  height: 60px;
-  width: 18em;
-  background: var(--c-primary);
-  text-transform: capitalize;
-  cursor: pointer;
-  vertical-align: middle;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px;
-  gap: 20px;
-  color: var(--c-secondary);
+.launcher_button {
+  /* height: 68px; */
+  /* width: 100%; */
+  background: #3774ab;
+  border-radius: 2px;
   border: none;
-  filter: brightness(0.9);
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
 }
-.launcher-button:hover {
-    filter: brightness(1);
+.launcher_button_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  transform: translateY(-6px);
+  background: var(--c-primary);
+  color: var(--fc-secondary);
+  text-transform: uppercase;
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 24px;
 }
-.launcher-button:focus {
-  border-style: none;
+.launcher_button:active .launcher_button_content {
+  transform: translateY(0px);
+}
+.launcher_button:focus {
   outline: none;
 }
-
 </style>
